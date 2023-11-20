@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
@@ -12,6 +12,10 @@
 if (isset($_POST['start_survey'])) {
     session_start();
     $_SESSION['answers'] = array();
+    $user_id = uniqid();
+    $_SESSION['user_id'] = $user_id;
+    header("Location: q-esrig.php");
+    exit();
 }
 ?>
 
