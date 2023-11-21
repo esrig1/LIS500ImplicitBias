@@ -8,9 +8,6 @@
 
 <body>
     <p>You have reached the end!</p>
-    <?php 
     
-    
-    echo $_SESSION["bannister_answer"]?>
 </body>
 </html>
