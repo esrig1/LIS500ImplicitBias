@@ -11,7 +11,6 @@
 <?php
 if (isset($_POST['start_survey'])) {
     session_start();
-    $_SESSION['answers'] = array();
     $user_id = uniqid();
     $_SESSION['user_id'] = $user_id;
     header("Location: q-esrig.php");

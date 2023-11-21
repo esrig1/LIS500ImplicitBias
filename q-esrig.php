@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="styles/survey.css">
 
 </head>
-
+<body>
 <?php
 
 //creates a user session for the form, only does this after the first quesiton
 session_start();
-$question_text = "When considering hiring a plumber for your house, you'd be more likely to hire a man'";
+$question_text = "When considering hiring a plumber for your house, you'd be more likely to hire a man";
 $user_id = $_SESSION['user_id'];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $selectedAnswer = isset($_POST['answer']) ? $_POST['answer'] : null;
