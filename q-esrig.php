@@ -14,11 +14,11 @@
 
 //creates a user session for the form, only does this after the first quesiton
 session_start();
-$question_text = "When considering hiring a plumber for your house, you'd be more likely to hire a man";
 $user_id = $_SESSION['user_id'];
+$question_text = "When growing up, you had many friends that weren't the same ethnic background as you";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $selectedAnswer = isset($_POST['answer']) ? $_POST['answer'] : null;
-    $_SESSION['esrig_answer'] = $selectedAnswer;
+    $_SESSION['bannister_answer'] = $selectedAnswer;
     header("Location: q-bannister.php");
     exit();
 }
@@ -54,3 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </footer>
 </body>
 </html>
+
+
+
+

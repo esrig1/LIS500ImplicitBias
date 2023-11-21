@@ -82,7 +82,7 @@ if ($result1 && $result2 && $result3) {
     echo "Error: " . $conn->error;
 }
 
-        echo "<p>1. When considering hiring a plumber for your house, you'd be more likely to hire a man</p>";
+        echo "When growing up, you had many friends that were not the same ethnic background as you";
         echo "<p>   Your Answer: $answer1</p>";
         echo "<p>   Average Answer: $avgAnswer1</p>";
 
