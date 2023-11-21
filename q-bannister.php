@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/survey.css">
 
 </head>
-
+<body>
 <?php
 
 //creates a user session for the form, only does this after the first quesiton
