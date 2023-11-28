@@ -18,7 +18,7 @@ $user_id = $_SESSION['user_id'];
 $question_text = "When growing up, you had many friends that weren't the same ethnic background as you";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $selectedAnswer = isset($_POST['answer']) ? $_POST['answer'] : null;
-    $_SESSION['bannister_answer'] = $selectedAnswer;
+    $_SESSION['esrig_answer'] = $selectedAnswer;
     header("Location: q-bannister.php");
     exit();
 }

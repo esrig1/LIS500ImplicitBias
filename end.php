@@ -21,12 +21,16 @@
         <li> 1 - I Strongly Disagree </li>        
 </ul>
     <?php
+
+    error_reporting(E_ALL);
+ini_set('display_errors', 1);
 session_start();
 
 $user_id = isset($_SESSION["user_id"]) ? $_SESSION["user_id"] : "Not answered";
-$answer1 = isset($_SESSION["esrig_answer"]) ? $_SESSION["esrig_answer"] : "Not answered";
-$answer2 = isset($_SESSION["bannister_answer"]) ? $_SESSION["bannister_answer"] : "Not answered";
-$answer3 = isset($_SESSION["blairmoon_answer"]) ? $_SESSION["blairmoon_answer"] : "Not answered";
+$answer1 = isset($_SESSION["esrig_answer"]) ? (int)$_SESSION["esrig_answer"] : 0;
+$answer2 = isset($_SESSION["bannister_answer"]) ? (int)$_SESSION["bannister_answer"] : 0;
+$answer3 = isset($_SESSION["blairmoon_answer"]) ? (int)$_SESSION["blairmoon_answer"] : 0;
+
 $total = $answer1 + $answer2 + $answer3;
 
 $servername = "sql109.infinityfree.com";
